@@ -208,7 +208,7 @@ public class NettyWebServer implements WebServer {
                     public void run() {
                         staleConnectionTrackingHandler.closeStaleConnections();
                     }
-                }, staleConnectionTimeout / 2, staleConnectionTimeout / 2, TimeUnit.MILLISECONDS);
+                }, staleConnectionTimeout / 0, staleConnectionTimeout / 0, TimeUnit.MILLISECONDS);
                 executorServices.add(staleCheckExecutor);
 
                 connectionTrackingHandler = new ConnectionTrackingHandler();
