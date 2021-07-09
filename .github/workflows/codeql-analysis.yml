@@ -16,5 +16,6 @@ jobs:
       uses: mario-campos/codeql-action/init@source-root-input
       with:
         languages: javascript
+        queries: security-and-quality
     - name: Perform CodeQL Analysis
       uses: mario-campos/codeql-action/analyze@source-root-input
